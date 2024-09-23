@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="photo-section">
+        <div class="odin">
+            <img id="odin" src="odin-lined.png" alt="Odin">
+            <p id="odin-text" >ODIN</p>
+        </div>
+        <p class="credits"> Photo from Unsplash</p>
+    </div>
+    <div class="content-section">
+        <div class="text-container">
+            <p class="main-text">No crowds, no waiting – secure your ideal workspace whenever you need it. Track availability in real time and organize your day with ease. Your space, your flexibility!</p>
+            <p class="main-text">You know you want to!</p>
+        </div>
+
+        <form class="form-container" id="sign-up" action="" method="get">
+            <div class="form-wrap">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+            </div>
+            <div class="form-wrap">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+            </div>
+            <div class="form-wrap">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com"  required>
+            </div>
+            <div class="form-wrap">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone">    
+            </div>
+            <div class="form-wrap">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </div>
+            <div class="form-wrap">
+                <label for="cpassword">CONFIRM PASSWORD</label>
+                <input type="password" id="cpassword" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>    
+            </div>
+            </form>
+        <div class="button-container">
+            <input type="submit"  form="sign-up" value="Create Account">
+            <p>Already have an account? <a href="url"> Log in!</a></p>        
+        </div>
+    </div>
+</body>
+</html>
